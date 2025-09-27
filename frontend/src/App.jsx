@@ -1,10 +1,13 @@
 import "./App.css";
 import "./components/inicioSesion.jsx"
-import Example from "./components/inicioSesion.jsx";
+import Login from "./components/inicioSesion.jsx";
+import { Routes, Route } from 'react-router-dom';
 function App() {
   return (
     <>
-    <Example />
+    <Routes>
+      <Route path="/inicio-sesion" element={Login}/>
+    </Routes>
     </>
   )
 }
