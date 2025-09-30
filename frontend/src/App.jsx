@@ -2,7 +2,11 @@ import { useState } from 'react';
 import Login from './components/inicioSesion';
 import Layout from './components/Layout';
 import Dashboard from './components/Dashboard';
-
+import AnimalesPage from './components/GestionAnimales';
+import ProduccionPage from './components/ControlProduccion';
+import SimplePage from './components/SimplePage';
+import ReportesPage from './components/Reportes';
+import ConfiguracionPage from './components/Configuracion';
 
 function App() {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
@@ -25,13 +29,13 @@ function App() {
       case 'dashboard':
         return <Dashboard setCurrentPage={setCurrentPage} />;
       case 'animales':
-        return <SimplePage title="Gestión de Animales" description="Administra tu ganado" setCurrentPage={setCurrentPage} />;
+        return <AnimalesPage />;
       case 'produccion':
-        return <SimplePage title="Control de Producción" description="Registra la producción lechera" setCurrentPage={setCurrentPage} />;
+        return <ProduccionPage />; 
       case 'reportes':
-        return <SimplePage title="Reportes y Análisis" description="Analiza métricas detalladas" setCurrentPage={setCurrentPage} />;
+        return <ReportesPage />
       case 'configuracion':
-        return <SimplePage title="Configuración" description="Personaliza tu aplicación" setCurrentPage={setCurrentPage} />;
+        return <ConfiguracionPage />
       default:
         return <Dashboard setCurrentPage={setCurrentPage} />;
     }
