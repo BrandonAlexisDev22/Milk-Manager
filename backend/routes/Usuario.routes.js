@@ -4,7 +4,7 @@ const {
   register,
   login,
   getProfile
-} = require('../controllers/userController');
+} = require('../controllers/Usuario.controller.js');
 
 const { proteger } = require('../middleware/auth');
 const { soloAdmin } = require('../middleware/roles');
