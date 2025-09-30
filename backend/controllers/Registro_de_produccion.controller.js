@@ -1,4 +1,4 @@
-const { Produccion } = require('../models');
+const { Produccion } = require('../models/Registro_de_produccion');
 
 exports.createProduccion = async (req, res) => {
   try {

@@ -1,4 +1,4 @@
-const { Configuracion } = require('../models');
+const { Configuracion } = require('../models/Configuracion');
 
 exports.createConfig = async (req, res) => {
   try {

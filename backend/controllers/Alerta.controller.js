@@ -1,4 +1,4 @@
-const { Alerta } = require('../models');
+const { Alerta } = require('../models/Alerta.js');
 
 exports.createAlerta = async (req, res) => {
   try {
